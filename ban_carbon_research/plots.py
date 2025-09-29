@@ -43,6 +43,7 @@ def map_power_plants():
      "New Hampshire",
      "New Jersey",
      "New York",
+     "Pennsylvania",
      "Rhode Island",
      "Vermont",
      ]
