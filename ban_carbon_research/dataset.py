@@ -68,6 +68,8 @@ def process_rggi_emissions_annual_facility():
 def process_geolocated_power_plants():
     fname = "Power_Plants"
     gdf = geopandas.read_file(RAW_DATA_DIR / fname)
+    
+    gdf["County"] = gdf["County"].replace("SUFFOLK", "Suffolk")
 
     mw_columns = [
             "Install_MW", "Total_MW", "Bat_MW", "Bio_MW", "Coal_MW",
